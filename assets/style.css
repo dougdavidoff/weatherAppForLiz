@@ -1,0 +1,10 @@
+#header {
+    height: 50px;
+    width: 100%;
+    background-color: #4bafc9;
+}
+
+#text {
+    color: forestgreen;
+    font-size: 30px;
+}

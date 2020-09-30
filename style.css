@@ -1,0 +1,47 @@
+#header {
+    height: 75px;
+    width: 100%;
+    background-color: #4bafc9;
+    font-family: 'Rock Salt', cursive;
+    color: #f9ecdc;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+.container {
+    width: 100%;
+}
+
+h3 {
+    color: forestgreen;
+    font-size: 24px;
+    font-family: 'Sunshiney', cursive;
+
+}
+
+h2 {
+    color: forestgreen;
+    font-size: 30px;
+    font-family: 'Rock Salt', cursive;
+}
+
+p {
+    color: forestgreen;
+    font-size: 14px;
+    font-family: 'Rock Salt', cursive;
+}
+
+.top-left {
+    background-color: #dcab5e;
+    height: 400px;
+    width: 45%;
+    float: left;
+}
+
+.top-right {
+    background-color: #ab410d;
+    height: 400px;
+    width: 45%;
+    float: left;
+}

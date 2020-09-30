@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Links to Bootstrap, FontAwesome, GoogleFonts, and our custom CSS stylesheet -->
+    <link
+      rel = "styles`heet"
+      href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+        rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sunshiney&display=swap" rel="stylesheet"
+    />
+    <link
+        rel="stylesheet" type="text/css" href="style.css"
+    />
+    <title>Liz's Weather App</title>
+  </head>
+
+  <body>
+        <header>
+            <div>
+                <h1 id="header">Liz's Weather App</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class = "row">
+                    <div class = "col-sm-6" id="top-left"></div>
+                        <div id="citySearch"></div>
+                            <label for="cityInput"><h3>Search for a city:</h3></label>
+                            <input id="cityInput">
+                            <button class="submitButton" type="submit" id="searchSubmit"><i class="fa fa-search"></i></button> >
+                        </div>
+                        <div class="cityHistory">
+                            <ul class="cityList"></ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="cityWX">
+                                <h2 id="placeName">City</h2>
+                                <img id = "icon" src = "" alt="Weather Icon">
+                                <p id = "temp">Temp:</p>
+                                <p id = "humidity">Humidity:</p>
+                                <p id = "Wind">Wind:</p>
+                                <p id = "UV">UV Index:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                    <div id="fiveForecast">
+                        <h2>Next 5 Days</h2>
+                    </div>
+                    <div class="card" style="width: 18rem;" id="dayOne">
+                        <div class="card-body">
+                          <h5 class="card-title" id="date1">Date1</h5>
+                          <h6 class="card-subtitle mb-2 text-muted" id="dayOneWX">Weather forecast</h6>
+                          <img id="dayOneIcon" src="" alt="WX Icon">
+                          <p class="card-text" id="dayOneTemp">Temp</p>
+                          <p class="card-text" id="dayOneHumidity">Humidity</p>
+                          <p class="card-text" id="dayOneUV">UV Index</p>
+                          <!-- <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;" id="day">
+                        <div class="card-body">
+                          <h5 class="card-title" id="date2">Date2</h5>
+                          <h6 class="card-subtitle mb-2 text-muted" id="dayTwoWX">Weather forecast</h6>
+                          <img id="dayTwoIcon" src="" alt="WX Icon">
+                          <p class="card-text" id="dayTwoTemp">Temp</p>
+                          <p class="card-text" id="dayTwoHumidity">Humidity</p>
+                          <p class="card-text" id="dayTwoUV">UV Index</p>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;" id="dayThree">
+                        <div class="card-body">
+                          <h5 class="card-title" id="date3">Date3</h5>
+                          <h6 class="card-subtitle mb-2 text-muted" id="dayThreeWX">Weather forecast</h6>
+                          <img id="dayThreeIcon" src="" alt="WX Icon">
+                          <p class="card-text" id="dayThreeTemp">Temp</p>
+                          <p class="card-text" id="dayThreeHumidity">Humidity</p>
+                          <p class="card-text" id="dayThreeUV">UV Index</p>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;" id="dayFour">
+                        <div class="card-body">
+                          <h5 class="card-title" id="date4">Date4</h5>
+                          <h6 class="card-subtitle mb-2 text-muted" id="dayFourWX">Weather forecast</h6>
+                          <img id="dayFourIcon" src="" alt="WX Icon">
+                          <p class="card-text" id="dayFourTemp">Temp</p>
+                          <p class="card-text" id="dayFourHumidity">Humidity</p>
+                          <p class="card-text" id="dayFourUV">UV Index</p>
+                        </div>
+                      </div>
+
+                      <div class="card" style="width: 18rem;" id="dayFive">
+                        <div class="card-body">
+                          <h5 class="card-title" id="date5">Date5</h5>
+                          <h6 class="card-subtitle mb-2 text-muted" id="dayFiveWX">Weather forecast</h6>
+                          <img id="dayFiveIcon" src="" alt="WX Icon">
+                          <p class="card-text" id="dayFiveTemp">Temp</p>
+                          <p class="card-text" id="dayFiveHumidity">Humidity</p>
+                          <p class="card-text" id="dayFiveUV">UV Index</p>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    <!-- JavaScript, jQuery, and Ajax calls -->
+    <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
